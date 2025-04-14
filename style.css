@@ -1,0 +1,138 @@
+/* Impostazioni di base */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #444; /* Sfondo grigio */
+    color: #fff;
+  }
+  
+  /* Logo nella parte in alto a sinistra */
+  .logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo {
+    width: 100px; /* Regola la dimensione in base alle tue esigenze */
+    border-radius: 15px;
+  }
+  
+  /* Container centrale della barra di ricerca */
+  .search-container {
+    position: relative;
+    margin: 150px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Pulsante posizionato in alto a destra */
+  .top-right {
+    position: absolute;
+    top: -50px;
+    right: 0;
+  }
+  
+  /* Banner immagine sopra la barra di ricerca */
+  .banner-image {
+    margin-bottom: 20px;
+  }
+  
+  .banner {
+    width: 30%;
+    border-radius: 15px;
+  }
+  
+  /* Input di ricerca */
+  .search-input {
+    width: 80%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .search-input:focus {
+    transform: scale(1.05);
+  }
+  
+  /* Testo sotto la barra */
+  .search-text {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Pulsante di donazione */
+  .donation-button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .donation-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+  }
+  
+  /* Pulsante aggiuntivo sotto la barra */
+  .bottom-button {
+    margin-top: 20px;
+  }
+  
+  /* Sezione galleria */
+  .gallery {
+    padding: 50px;
+    background-color: #333;
+  }
+  
+  .gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .gallery-items img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  
+  /* Animazione di zoom al momento dello scroll */
+  .gallery-items img.zoom-animation {
+    animation: zoomIn 0.7s ease forwards;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Animazione hover per le immagini della galleria */
+  .gallery-items img:hover {
+    transform: scale(1.1);
+  }
+  
